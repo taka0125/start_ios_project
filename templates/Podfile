@@ -2,9 +2,15 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-pod 'TAKKitSwift/Core'
+target 'Sample' do
+  pod 'TAKKitSwift/Core'
+  pod 'SwiftTask'
+  pod 'Bond'
+  pod 'Alamofire'
+  pod 'ObjectMapper'
 
-#post_install do |installer|
-#  require 'fileutils'
-#  FileUtils.cp_r('Pods/Target Support Files/Pods/Pods-acknowledgements.plist', 'Sample/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
-#end
+#  post_install do |installer|
+#    require 'fileutils'
+#    FileUtils.cp_r('Pods/Target Support Files/Pods-Sample/Pods-Sample-acknowledgements.plist', 'Sample/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+#  end
+end

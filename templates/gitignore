@@ -31,3 +31,5 @@ fastlane/report.xml
 *.ipa
 *.app.dSYM.zip
 certs/*.mobileprovision
+
+.envrc
